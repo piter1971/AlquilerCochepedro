@@ -1,0 +1,190 @@
+object Formcoche: TFormcoche
+  Left = 0
+  Top = 0
+  Caption = 'Coches'
+  ClientHeight = 364
+  ClientWidth = 649
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 649
+    Height = 364
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 594
+    object Label6: TLabel
+      Left = 136
+      Top = 261
+      Width = 29
+      Height = 13
+      Caption = 'Marca'
+    end
+    object Label1: TLabel
+      Left = 8
+      Top = 261
+      Width = 43
+      Height = 13
+      Caption = 'matricula'
+      FocusControl = DBEdit1
+    end
+    object Label2: TLabel
+      Left = 208
+      Top = 261
+      Width = 34
+      Height = 13
+      Caption = 'Modelo'
+      FocusControl = DBEdit2
+    end
+    object Label3: TLabel
+      Left = 280
+      Top = 261
+      Width = 18
+      Height = 13
+      Caption = 'a'#241'o'
+      FocusControl = DBEdit3
+    end
+    object Label4: TLabel
+      Left = 312
+      Top = 261
+      Width = 50
+      Height = 13
+      Caption = 'Capacidad'
+      FocusControl = DBEdit4
+    end
+    object Label5: TLabel
+      Left = 368
+      Top = 261
+      Width = 61
+      Height = 13
+      Caption = 'Coste_Diario'
+      FocusControl = DBEdit5
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 8
+      Top = 331
+      Width = 364
+      Height = 25
+      DataSource = DataModule3.DSCoches
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit]
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 378
+      Top = 332
+      Width = 145
+      Height = 25
+      Caption = 'Caracteristicas'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+    object BitBtn2: TBitBtn
+      Left = 511
+      Top = 278
+      Width = 38
+      Height = 25
+      Kind = bkCancel
+      NumGlyphs = 2
+      TabOrder = 2
+    end
+    object BitBtn1: TBitBtn
+      Left = 451
+      Top = 278
+      Width = 38
+      Height = 25
+      Kind = bkOK
+      NumGlyphs = 2
+      TabOrder = 3
+      OnClick = BitBtn1Click
+    end
+    object DBEdit1: TDBEdit
+      Left = 8
+      Top = 280
+      Width = 95
+      Height = 21
+      DataField = 'matricula'
+      DataSource = DataModule3.DSCoches
+      TabOrder = 4
+    end
+    object DBEdit2: TDBEdit
+      Left = 191
+      Top = 280
+      Width = 60
+      Height = 21
+      DataField = 'Modelo'
+      DataSource = DataModule3.DSCoches
+      TabOrder = 5
+    end
+    object DBEdit3: TDBEdit
+      Left = 264
+      Top = 280
+      Width = 42
+      Height = 21
+      DataField = 'a'#241'o'
+      DataSource = DataModule3.DSCoches
+      TabOrder = 6
+    end
+    object DBEdit4: TDBEdit
+      Left = 319
+      Top = 280
+      Width = 26
+      Height = 21
+      DataField = 'Capacidad'
+      DataSource = DataModule3.DSCoches
+      TabOrder = 7
+    end
+    object DBEdit5: TDBEdit
+      Left = 368
+      Top = 280
+      Width = 42
+      Height = 21
+      DataField = 'Coste_Diario'
+      DataSource = DataModule3.DSCoches
+      TabOrder = 8
+    end
+  end
+  object ComboBoxMarca: TComboBox
+    Left = 109
+    Top = 280
+    Width = 76
+    Height = 21
+    TabOrder = 1
+    Text = 'ComboBoxMarca'
+    Items.Strings = (
+      'Ford'
+      'Opel'
+      'Renault'
+      'Honda')
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule3.FDTable2
+    ScopeMappings = <>
+    Left = 584
+    Top = 312
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToFieldMarca: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Marca'
+      Control = ComboBoxMarca
+      Track = True
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

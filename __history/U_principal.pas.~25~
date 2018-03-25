@@ -1,0 +1,183 @@
+
+
+
+unit U_principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls, HTMLHelpViewer,Vcl.Imaging.jpeg,
+  Vcl.StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    Panel1: TPanel;
+    MainMenu1: TMainMenu;
+    abla1: TMenuItem;
+    Operaciones1: TMenuItem;
+    Clientes1: TMenuItem;
+    Coches1: TMenuItem;
+    Alquiler1: TMenuItem;
+    Accesorios1: TMenuItem;
+    Caracteristicas1: TMenuItem;
+    Vercochesalquilado1: TMenuItem;
+    BuscarCliente1: TMenuItem;
+    BuscarCochePorMatricula1: TMenuItem;
+    Filtrosyconsultas1: TMenuItem;
+    Image1: TImage;
+    Informes1: TMenuItem;
+    clientes2: TMenuItem;
+    Alquiler2: TMenuItem;
+    coches2: TMenuItem;
+    CaractCoche1: TMenuItem;
+    AccesAlquilados1: TMenuItem;
+    Coches3: TMenuItem;
+    CLienteAlquiler1: TMenuItem;
+    Timer1: TTimer;
+    procedure Accesorios1Click(Sender: TObject);
+    procedure Caracteristicas1Click(Sender: TObject);
+    procedure Alquiler1Click(Sender: TObject);
+    procedure Vercochesalquilado1Click(Sender: TObject);
+    procedure Coches1Click(Sender: TObject);
+    procedure Clientes1Click(Sender: TObject);
+    procedure BuscarCliente1Click(Sender: TObject);
+    procedure BuscarCochePorMatricula1Click(Sender: TObject);
+    procedure Filtrosyconsultas1Click(Sender: TObject);
+    procedure Coches3Click(Sender: TObject);
+    procedure AccesAlquilados1Click(Sender: TObject);
+    procedure clientes2Click(Sender: TObject);
+    procedure CLienteAlquiler1Click(Sender: TObject);
+    procedure CaractCoche1Click(Sender: TObject);
+
+
+    procedure Timer1Timer(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+
+
+
+    
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  contador :integer;
+
+implementation
+uses U_module, U_Accesorios, U_Caract, U_Alquiler, U_CochesAlquilados, U_Coche,
+  U_Clientes, U_BuscarCliente, U_BuscarCochePorMatri, U_BuscarVarios ;
+
+{$R *.dfm}
+
+procedure TForm2.AccesAlquilados1Click(Sender: TObject);
+begin
+DataModule3.ReportAccesAlq.ShowReport();
+end;
+
+procedure TForm2.Accesorios1Click(Sender: TObject);
+begin
+Form1.showmodal;
+end;
+
+procedure TForm2.Alquiler1Click(Sender: TObject);
+begin
+
+FormAlq.showmodal;
+end;
+
+procedure TForm2.BuscarCliente1Click(Sender: TObject);
+begin
+form6.showmodal;
+end;
+
+procedure TForm2.BuscarCochePorMatricula1Click(Sender: TObject);
+begin
+form9.showmodal;
+end;
+
+
+
+procedure TForm2.CaractCoche1Click(Sender: TObject);
+begin
+DataModule3.ReportCocheCaract.ShowReport();
+end;
+
+procedure TForm2.Caracteristicas1Click(Sender: TObject);
+begin
+form3.showmodal;
+end;
+
+procedure TForm2.CLienteAlquiler1Click(Sender: TObject);
+begin
+DataModule3.ReportClienteAlq.ShowReport();
+end;
+
+procedure TForm2.Clientes1Click(Sender: TObject);
+begin
+DataModule3.FDTclientes.Append;
+fromcli.showmodal;
+end;
+
+
+
+procedure TForm2.clientes2Click(Sender: TObject);
+begin
+DataModule3.ReportCliente.ShowReport();
+end;
+
+procedure TForm2.Coches1Click(Sender: TObject);
+begin
+DataModule3.FDTCoches.Append;
+Formcoche.showmodal;
+end;
+
+
+
+procedure TForm2.Coches3Click(Sender: TObject);
+begin
+DataModule3.ReportCoche.ShowReport();
+end;
+
+procedure TForm2.Filtrosyconsultas1Click(Sender: TObject);
+begin
+Form10.showmodal;
+end;
+
+
+
+
+
+
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+contador:=0;
+Timer1.Enabled:=true;
+end;
+
+procedure TForm2.Timer1Timer(Sender: TObject);
+var
+contador :integer;
+begin
+if contador=5 then
+    contador:= 0;
+case contador of
+ 0:image1.Picture.LoadFromFile('p1.jpg');
+ 1:image1.Picture.LoadFromFile('p2.jpg');
+ 2:image1.Picture.LoadFromFile('p1.jpg');
+ 3:image1.Picture.LoadFromFile('p4.jpg');
+ 4:image1.Picture.LoadFromFile('p5.jpg');
+end;
+ inc(contador);
+end;
+
+procedure TForm2.Vercochesalquilado1Click(Sender: TObject);
+begin
+ DataModule3.FDTAlquiler.RefreshMetadata;
+FormCochAlq.showmodal;
+end;
+
+end.

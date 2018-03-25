@@ -1,0 +1,35 @@
+unit U_BuscarVarios;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.DBCtrls;
+
+type
+  TForm10 = class(TForm)
+    Panel1: TPanel;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    DBCheckBox1: TDBCheckBox;
+    DBCheckBox2: TDBCheckBox;
+    ComboBox1: TComboBox;
+    Button1: TButton;
+    DBGrid1: TDBGrid;
+    DBComboBox1: TDBComboBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+uses U_module;
+
+{$R *.dfm}
+
+end.

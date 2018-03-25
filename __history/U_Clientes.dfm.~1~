@@ -1,0 +1,162 @@
+object fromcli: Tfromcli
+  Left = 0
+  Top = 0
+  Caption = 'Clientes'
+  ClientHeight = 388
+  ClientWidth = 542
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 542
+    Height = 388
+    Align = alClient
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Top = 187
+      Width = 65
+      Height = 13
+      Caption = 'dni_con_letra'
+      FocusControl = DBEdit1
+    end
+    object Label2: TLabel
+      Left = 176
+      Top = 187
+      Width = 48
+      Height = 13
+      Caption = 'nom_apell'
+      FocusControl = DBEdit2
+    end
+    object Label3: TLabel
+      Left = 8
+      Top = 245
+      Width = 39
+      Height = 13
+      Caption = 'domicilio'
+      FocusControl = DBEdit3
+    end
+    object Label4: TLabel
+      Left = 176
+      Top = 245
+      Width = 40
+      Height = 13
+      Caption = 'telefono'
+      FocusControl = DBEdit4
+    end
+    object DBEdit1: TDBEdit
+      Left = 8
+      Top = 206
+      Width = 150
+      Height = 21
+      DataField = 'dni_con_letra'
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 176
+      Top = 206
+      Width = 229
+      Height = 21
+      DataField = 'nom_apell'
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 8
+      Top = 264
+      Width = 150
+      Height = 21
+      DataField = 'domicilio'
+      TabOrder = 2
+    end
+    object DBEdit4: TDBEdit
+      Left = 176
+      Top = 264
+      Width = 100
+      Height = 21
+      DataField = 'telefono'
+      TabOrder = 3
+    end
+    object Btnok: TBitBtn
+      Left = 306
+      Top = 262
+      Width = 38
+      Height = 25
+      Kind = bkOK
+      NumGlyphs = 2
+      TabOrder = 4
+    end
+    object BtnCancelar: TBitBtn
+      Left = 378
+      Top = 262
+      Width = 38
+      Height = 25
+      Kind = bkCancel
+      NumGlyphs = 2
+      TabOrder = 5
+      OnClick = BtnCancelarClick
+    end
+  end
+  object StringGridBindSourceDB1: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 542
+    Height = 177
+    ColCount = 1
+    FixedCols = 0
+    RowCount = 2
+    TabOrder = 1
+    ColWidths = (
+      140)
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Left = 0
+    Top = 293
+    Width = 416
+    Height = 25
+    DataSource = BindSourceDB1
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbRefresh]
+    Orientation = orHorizontal
+    TabOrder = 2
+  end
+  object BindSourceDB1: TBindSourceDB
+    ScopeMappings = <>
+    Left = 496
+    Top = 184
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGridBindSourceDB1
+      Columns = <
+        item
+          MemberName = 'dni_con_letra'
+          Width = 140
+        end
+        item
+          MemberName = 'nom_apell'
+          Width = 140
+        end
+        item
+          MemberName = 'telefono'
+          Width = 140
+        end
+        item
+          MemberName = 'domicilio'
+          Width = 140
+        end>
+    end
+  end
+end

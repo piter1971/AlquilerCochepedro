@@ -1,0 +1,55 @@
+unit U_BuscarCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TForm6 = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    RGBuscarPor: TRadioGroup;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    BitBtn1: TBitBtn;
+    CheckBox1: TCheckBox;
+    ETnomApell: TEdit;
+    procedure RadioButton1Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+uses U_module;
+
+{$R *.dfm}
+
+
+
+procedure TForm6.BitBtn1Click(Sender: TObject);
+var
+cad :String;
+begin
+if (RGBuscarPor.ItemIndex = 0) then
+begin
+cad:=ETnomApell.Text;
+DataModule3.FDTclientes.IndexName:='iDNI';
+DataModule3.FDTclientes.SetKey;
+DataModule3.FDTclientes.FieldByName('dni_con_letra').AsString:=cad;
+if DataModule3.FDTclientes.GotoKey then
+      showmessage('Telefono  encontrado')
+else
+      showmessage('Telefono no encontrado');
+
+
+end;
+
+end.

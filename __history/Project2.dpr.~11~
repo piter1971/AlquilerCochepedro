@@ -1,0 +1,38 @@
+program Project2;
+
+uses
+  Vcl.Forms,
+  U_principal in 'U_principal.pas' {Form2},
+  U_module in 'U_module.pas' {DataModule3: TDataModule},
+  U_Accesorios in 'U_Accesorios.pas' {Form1},
+  U_Caract in 'U_Caract.pas' {Form3},
+  U_Clientes in 'U_Clientes.pas' {fromcli},
+  U_Coche in 'U_Coche.pas' {Formcoche},
+  U_CochesAlquilados in 'U_CochesAlquilados.pas' {FormCochAlq},
+  U_Alquiler in 'U_Alquiler.pas' {FormAlq},
+  U_CaractCoche in 'U_CaractCoche.pas' {Form4},
+  U_CaractCocheCalend in 'U_CaractCocheCalend.pas' {Form5},
+  U_BuscarCliente in 'U_BuscarCliente.pas' {Form6},
+  U_VerContactBuscado in 'U_VerContactBuscado.pas' {Form7},
+  U_BuscarPorNom in 'U_BuscarPorNom.pas' {Form8};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TDataModule3, DataModule3);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(Tfromcli, fromcli);
+  Application.CreateForm(TFormcoche, Formcoche);
+  Application.CreateForm(TFormCochAlq, FormCochAlq);
+  Application.CreateForm(TFormAlq, FormAlq);
+  Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(TForm5, Form5);
+  Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
+  Application.CreateForm(TForm8, Form8);
+  Application.Run;
+end.

@@ -1,0 +1,51 @@
+unit U_CochesAlquilados;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Bind.Grid, System.Rtti, System.Bindings.Outputs, Vcl.Bind.Editors,
+  Data.Bind.EngExt, Vcl.Bind.DBEngExt, Data.Bind.Components, Data.Bind.Grid,
+  Vcl.Grids, Data.Bind.DBScope, Vcl.DBGrids;
+
+type
+  TFormCochAlq = class(TForm)
+    Panel1: TPanel;
+    BtnAlquilar: TButton;
+    BtnEliminar: TButton;
+    BtnAccesorios: TButton;
+    BtnDetalles: TButton;
+    BtnImprimirDet: TButton;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    BindSourceDB2: TBindSourceDB;
+    DBGrid1: TDBGrid;
+    procedure BtnEliminarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCochAlq: TFormCochAlq;
+
+implementation
+uses U_module;
+
+{$R *.dfm}
+
+procedure TFormCochAlq.BtnEliminarClick(Sender: TObject);
+
+var
+ cad:String;
+ cod:integer;
+begin
+ cad:=inputBox('Borrar','Introduce codigo:','');
+
+
+
+end;
+
+end.

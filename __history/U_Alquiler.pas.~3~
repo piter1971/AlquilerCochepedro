@@ -1,0 +1,151 @@
+unit U_Alquiler;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.Buttons,DateUtils,
+  Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids,Data.DB;
+
+type
+  TFormAlq = class(TForm)
+    GroupBox1: TGroupBox;
+    Calendar: TMonthCalendar;
+    GroupBox2: TGroupBox;
+    GroupBox3: TGroupBox;
+    GroupBox4: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    LblCantDias: TLabel;
+    LblTotal: TLabel;
+    BtnCaractCoche: TSpeedButton;
+    BtnInsertar: TButton;
+    LCMBXCoche: TDBLookupComboBox;
+    LCMBXcliente: TDBLookupComboBox;
+    LblV_X_Dia: TLabel;
+    ComboBox1: TComboBox;
+
+
+    procedure CalendarClick(Sender: TObject);
+    procedure BtnInsertarClick(Sender: TObject);
+    procedure LCMBXCocheClick(Sender: TObject);
+    procedure BtnCaractCocheClick(Sender: TObject);
+
+    procedure FormCanResize(Sender: TObject; var NewWidth, NewHeight: Integer;
+      var Resize: Boolean);
+
+
+
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormAlq: TFormAlq;
+  con :integer;
+  StartDate : TDateTime;
+EndDate   : TDateTime;
+
+implementation
+
+{$R *.dfm}
+
+uses u_module, U_VerCaractCoche;
+
+
+procedure TFormAlq.BtnCaractCocheClick(Sender: TObject);
+begin
+       Form11.showmodal;
+     DataModule3.Q_VerCaractCoche.Close;
+     DataModule3.Q_VerCaractCoche.SQL.Text:= 'select nombre_caract from CARACT_COCHE,CARACTERISTICAS where Caract=id_caract and matri=' + QuotedStr (LCMBXCoche.Text);
+      DataModule3.Q_VerCaractCoche.open;
+
+
+
+
+end;
+
+procedure TFormAlq.BtnInsertarClick(Sender: TObject);
+var
+CstDiario,numDias,Total :Integer;
+matricula,F,FV,matri :string;
+f1,fv1:TDateTime;
+begin
+DataModule3.FDTAlquiler.Close;
+DataModule3.FDTAlquiler.SQL.Text:='SELECT Coste_Diario FROM COCHES WHERE matricula =' + QuotedStr (LCMBXCoche.Text);
+DataModule3.FDTAlquiler.open;
+LblV_X_Dia.Caption := DataModule3.FDTCoches.FieldByName('Coste_Diario').AsString;
+
+CstDiario:=StrToInt(LblV_X_Dia.Caption );
+numDias:=StrToInt(LblCantDias.Caption);
+Total:=CstDiario * numDias;
+  matricula :=LCMBXCoche.Text;
+  //ShowMessage(matricula);
+ DataModule3.q_SelectAlq.Close;
+DataModule3.q_SelectAlq.SQL.Text:='select  Fecha ,Fecha_Devolucion from ALQUILER where Matriculas='+QuotedStr(matricula);
+ DataModule3.q_SelectAlq.open;
+  f:= DataModule3.q_SelectAlq.FieldByName('Fecha').AsString;
+  fv:= DataModule3.q_SelectAlq.FieldByName('Fecha_Devolucion').AsString;
+     try
+    if DataModule3.q_SelectAlq.IsEmpty then
+        begin
+          f:='25/07/2012';
+          fv:='26/07/2012';
+        end
+        else
+          ShowMessage(f +'  '+ fv);
+       f1 := StrToDate(f);
+ fv1  := StrToDate(fv);
+ if  DataModule3.q_SelectAlq.IsEmpty then
+    ShowMessage('registro existe')
+    else if DateInRange(StartDate, f1, fv1) then
+    ShowMessage('este coche ya esta alquilado desde: '+f+' hasta '+fv )
+     else
+{DataModule3.FDTAlquiler.Insert;
+DataModule3.FDTAlquiler.FieldByName('Matriculas').AsString:=LCMBXCoche.Text;
+DataModule3.FDTAlquiler.FieldByName('DNI_Cliente').AsString:=LCMBXcliente.Text;
+DataModule3.FDTAlquiler.FieldByName('Fecha').AsString:=DateToStr(StartDate) ;
+DataModule3.FDTAlquiler.FieldByName('Fecha_Devolucion').AsString:=DateToStr(EndDate) ;
+DataModule3.FDTAlquiler.FieldByName('Total').AsInteger:= Total;
+
+DataModule3.FDTAlquiler.Post;}
+
+    except
+    ShowMessage('no se ha hecho el registro');
+  end;
+end;
+
+procedure TFormAlq.CalendarClick(Sender: TObject);
+
+begin
+StartDate := Calendar.Date;
+EndDate   := Calendar.EndDate;
+//Showmessage('My Dates begin on '+DateToStr(StartDate)+' And End on '+DateToStr(EndDate) +''+ IntToStr(DaysBetween(StartDate, EndDate)) +' days');
+LblCantDias.Caption:=   IntToStr(DaysBetween(StartDate, EndDate));
+end;
+
+
+
+procedure TFormAlq.FormCanResize(Sender: TObject; var NewWidth,
+  NewHeight: Integer; var Resize: Boolean);
+begin
+Resize:=false;
+end;
+
+
+
+procedure TFormAlq.LCMBXCocheClick(Sender: TObject);
+
+begin
+if not DataModule3.FDTCaractCoche.Locate('matri',vararrayof([LCMBXCoche.Text]),[]) then
+  BtnCaractCoche.Enabled :=false ;
+
+
+end;
+
+end.

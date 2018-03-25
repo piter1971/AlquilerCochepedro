@@ -1,0 +1,52 @@
+unit U_CaractCoche;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.DBCtrls, Vcl.StdCtrls,
+  Vcl.ExtCtrls;
+
+type
+  TForm4 = class(TForm)
+    Panel1: TPanel;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    DBLookupListBox1: TDBLookupListBox;
+    DBLookupListBox2: TDBLookupListBox;
+    SpeedButton2: TSpeedButton;
+    SpeedButton1: TSpeedButton;
+    procedure SpeedButton2Click(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+uses U_module;
+
+
+{$R *.dfm}
+
+
+
+procedure TForm4.SpeedButton2Click(Sender: TObject);
+begin
+with DBLookupListBox1.ListSource.DataSet do
+begin
+  First;
+
+  while not Eof do
+  begin
+    DBLookupListBox2.SelectedItem.Copy(FieldByName(DBLookupListBox1.SelectedItem).AsString);
+    Next;
+  end;
+end;
+end;
+
+end.

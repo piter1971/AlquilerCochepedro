@@ -1,0 +1,28 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Form11'
+  ClientHeight = 238
+  ClientWidth = 359
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 359
+    Height = 238
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 200
+    ExplicitTop = 88
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+  end
+end

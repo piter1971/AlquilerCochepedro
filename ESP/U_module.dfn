@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="I:\DAM2\Des. interfaces\delfi\2017\Febrero\AlquilerCoche1\U_module.dfm" source-language="es-ES" target-language="es-ES" datatype="delphiform" tool="ETM v10.0" ts="I:\DAM2\Des. interfaces\delfi\2017\Febrero\AlquilerCoche1\U_module.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">42795.3627083333</prop>
+        <prop prop-type="OrigDateTime">42794.7899768519</prop>
+        <prop prop-type="XlatDateTime">42794.7899768519</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">83</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:DataModule3.OldCreateOrder" resname="O:DataModule3.OldCreateOrder">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TDataModule3</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.Height" resname="O:DataModule3.Height">
+        <source>305</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TDataModule3</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.Width" resname="O:DataModule3.Width">
+        <source>305</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TDataModule3</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSclientes.DataSet" resname="O:DataModule3.O:DSclientes.DataSet">
+        <source>FDTclientes</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSclientes.Left" resname="O:DataModule3.O:DSclientes.Left">
+        <source>104</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSclientes.Top" resname="O:DataModule3.O:DSclientes.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.Active" resname="O:DataModule3.O:FDTclientes.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.IndexFieldNames" resname="O:DataModule3.O:FDTclientes.IndexFieldNames">
+        <source>'dni_con_letra'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.Connection" resname="O:DataModule3.O:FDTclientes.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTclientes.UpdateOptions.UpdateTableName">
+        <source>'CLIENTE'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.TableName" resname="O:DataModule3.O:FDTclientes.TableName">
+        <source>'CLIENTE'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.Left" resname="O:DataModule3.O:FDTclientes.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTclientes.Top" resname="O:DataModule3.O:FDTclientes.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCoches.DataSet" resname="O:DataModule3.O:DSCoches.DataSet">
+        <source>FDTable2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCoches.Left" resname="O:DataModule3.O:DSCoches.Left">
+        <source>104</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCoches.Top" resname="O:DataModule3.O:DSCoches.Top">
+        <source>64</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.Active" resname="O:DataModule3.O:FDTable2.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.IndexFieldNames" resname="O:DataModule3.O:FDTable2.IndexFieldNames">
+        <source>'matricula'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.Connection" resname="O:DataModule3.O:FDTable2.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTable2.UpdateOptions.UpdateTableName">
+        <source>'COCHES'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.TableName" resname="O:DataModule3.O:FDTable2.TableName">
+        <source>'COCHES'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627217824</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.Left" resname="O:DataModule3.O:FDTable2.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTable2.Top" resname="O:DataModule3.O:FDTable2.Top">
+        <source>64</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSAlquiles.DataSet" resname="O:DataModule3.O:DSAlquiles.DataSet">
+        <source>FDTAlquiler</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSAlquiles.Left" resname="O:DataModule3.O:DSAlquiles.Left">
+        <source>104</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSAlquiles.Top" resname="O:DataModule3.O:DSAlquiles.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.Active" resname="O:DataModule3.O:FDTAlquiler.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.IndexFieldNames" resname="O:DataModule3.O:FDTAlquiler.IndexFieldNames">
+        <source>'id_tabla'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.Connection" resname="O:DataModule3.O:FDTAlquiler.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTAlquiler.UpdateOptions.UpdateTableName">
+        <source>'ALQUILER'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.TableName" resname="O:DataModule3.O:FDTAlquiler.TableName">
+        <source>'ALQUILER'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.Left" resname="O:DataModule3.O:FDTAlquiler.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAlquiler.Top" resname="O:DataModule3.O:FDTAlquiler.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSacces.DataSet" resname="O:DataModule3.O:DSacces.DataSet">
+        <source>FDTAcces</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSacces.Left" resname="O:DataModule3.O:DSacces.Left">
+        <source>104</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSacces.Top" resname="O:DataModule3.O:DSacces.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.Active" resname="O:DataModule3.O:FDTAcces.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.IndexFieldNames" resname="O:DataModule3.O:FDTAcces.IndexFieldNames">
+        <source>'nombre_acces'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.Connection" resname="O:DataModule3.O:FDTAcces.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTAcces.UpdateOptions.UpdateTableName">
+        <source>'ACCESORIOS'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.TableName" resname="O:DataModule3.O:FDTAcces.TableName">
+        <source>'ACCESORIOS'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.Left" resname="O:DataModule3.O:FDTAcces.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces.Top" resname="O:DataModule3.O:FDTAcces.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCaract.DataSet" resname="O:DataModule3.O:DSCaract.DataSet">
+        <source>FDTCaract</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCaract.Left" resname="O:DataModule3.O:DSCaract.Left">
+        <source>104</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCaract.Top" resname="O:DataModule3.O:DSCaract.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.Active" resname="O:DataModule3.O:FDTCaract.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.IndexFieldNames" resname="O:DataModule3.O:FDTCaract.IndexFieldNames">
+        <source>'id_caract'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.Connection" resname="O:DataModule3.O:FDTCaract.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTCaract.UpdateOptions.UpdateTableName">
+        <source>'CARACTERISTICAS'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.TableName" resname="O:DataModule3.O:FDTCaract.TableName">
+        <source>'CARACTERISTICAS'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.Left" resname="O:DataModule3.O:FDTCaract.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCaract.Top" resname="O:DataModule3.O:FDTCaract.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSAcces_Alq.DataSet" resname="O:DataModule3.O:DSAcces_Alq.DataSet">
+        <source>FDTAcces_ALQ</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSAcces_Alq.Left" resname="O:DataModule3.O:DSAcces_Alq.Left">
+        <source>264</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSAcces_Alq.Top" resname="O:DataModule3.O:DSAcces_Alq.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.Active" resname="O:DataModule3.O:FDTAcces_ALQ.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.IndexFieldNames" resname="O:DataModule3.O:FDTAcces_ALQ.IndexFieldNames">
+        <source>'id_tabla'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.Connection" resname="O:DataModule3.O:FDTAcces_ALQ.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTAcces_ALQ.UpdateOptions.UpdateTableName">
+        <source>'ACCES_ALQ'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.TableName" resname="O:DataModule3.O:FDTAcces_ALQ.TableName">
+        <source>'ACCES_ALQ'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.Left" resname="O:DataModule3.O:FDTAcces_ALQ.Left">
+        <source>192</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTAcces_ALQ.Top" resname="O:DataModule3.O:FDTAcces_ALQ.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.362721794</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCoches_caract.DataSet" resname="O:DataModule3.O:DSCoches_caract.DataSet">
+        <source>FDTCoches_carat</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCoches_caract.Left" resname="O:DataModule3.O:DSCoches_caract.Left">
+        <source>264</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:DSCoches_caract.Top" resname="O:DataModule3.O:DSCoches_caract.Top">
+        <source>80</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.Active" resname="O:DataModule3.O:FDTCoches_carat.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.IndexFieldNames" resname="O:DataModule3.O:FDTCoches_carat.IndexFieldNames">
+        <source>'matri;Caract'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.Connection" resname="O:DataModule3.O:FDTCoches_carat.Connection">
+        <source>conexion</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.UpdateOptions.UpdateTableName" resname="O:DataModule3.O:FDTCoches_carat.UpdateOptions.UpdateTableName">
+        <source>'CARACT_COCHE'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.TableName" resname="O:DataModule3.O:FDTCoches_carat.TableName">
+        <source>'CARACT_COCHE'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">70</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.Left" resname="O:DataModule3.O:FDTCoches_carat.Left">
+        <source>192</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">71</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDTCoches_carat.Top" resname="O:DataModule3.O:FDTCoches_carat.Top">
+        <source>80</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">72</prop><prop prop-type="Type">TFDTable</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.Params.Strings[0]" resname="O:DataModule3.O:conexion.Params.Strings[0]">
+        <source>'Database=C:\Users\Pedro\Desktop\AlquilerCoche\Win32\Debug\AlquilerCoches1.db'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">73</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.Params.Strings[1]" resname="O:DataModule3.O:conexion.Params.Strings[1]">
+        <source>'LockingMode=Normal'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">74</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.Params.Strings[2]" resname="O:DataModule3.O:conexion.Params.Strings[2]">
+        <source>'DriverID=SQLite'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">75</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.Connected" resname="O:DataModule3.O:conexion.Connected">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">76</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.LoginPrompt" resname="O:DataModule3.O:conexion.LoginPrompt">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">77</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.Left" resname="O:DataModule3.O:conexion.Left">
+        <source>176</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">78</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:conexion.Top" resname="O:DataModule3.O:conexion.Top">
+        <source>160</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">79</prop><prop prop-type="Type">TFDConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDGUIxWaitCursor1.Provider" resname="O:DataModule3.O:FDGUIxWaitCursor1.Provider">
+        <source>'Forms'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">80</prop><prop prop-type="Type">TFDGUIxWaitCursor</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDGUIxWaitCursor1.Left" resname="O:DataModule3.O:FDGUIxWaitCursor1.Left">
+        <source>256</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">81</prop><prop prop-type="Type">TFDGUIxWaitCursor</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:DataModule3.O:FDGUIxWaitCursor1.Top" resname="O:DataModule3.O:FDGUIxWaitCursor1.Top">
+        <source>160</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">42795.3627218056</prop><prop prop-type="Status">0</prop><prop prop-type="Order">82</prop><prop prop-type="Type">TFDGUIxWaitCursor</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

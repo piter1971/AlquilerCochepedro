@@ -1,0 +1,70 @@
+unit U_BuscarCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TForm6 = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    RGBuscarPor: TRadioGroup;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    BitBtn1: TBitBtn;
+    CheckBox1: TCheckBox;
+    ETnomApell: TEdit;
+
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+uses U_module, U_VerContactBuscado;
+
+{$R *.dfm}
+
+
+
+procedure TForm6.BitBtn1Click(Sender: TObject);
+begin
+if RadioButton1.Checked then
+   begin
+
+
+Datamodule3.Q_BuscarDNI.Close;
+  Datamodule3.Q_BuscarDNI.ParamByName('DNI').AsString:= ETnomApell.Text;
+   Datamodule3.Q_BuscarDNI.open;
+
+      form7.ShowModal
+   end
+   else
+   Datamodule3.Q.Close;
+  Datamodule3.Q_BuscarDNI.ParamByName('DNI').AsString:= ETnomApell.Text;
+   Datamodule3.Q_BuscarDNI.open;
+
+      form7.ShowModal
+
+    end   ;
+
+
+
+
+
+
+
+procedure TForm6.FormCreate(Sender: TObject);
+begin
+RadioButton1.Checked:=true;
+end;
+
+end.

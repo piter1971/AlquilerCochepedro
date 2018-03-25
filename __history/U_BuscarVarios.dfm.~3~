@@ -1,0 +1,46 @@
+object Form10: TForm10
+  Left = 0
+  Top = 0
+  Caption = 'Buscar'
+  ClientHeight = 431
+  ClientWidth = 418
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 418
+    Height = 431
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 112
+    ExplicitTop = 96
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object GroupBox1: TGroupBox
+      Left = 0
+      Top = 0
+      Width = 379
+      Height = 113
+      Align = alCustom
+      Caption = 'Filtros'
+      TabOrder = 0
+    end
+    object GroupBox2: TGroupBox
+      Left = 0
+      Top = 112
+      Width = 379
+      Height = 145
+      Align = alCustom
+      Caption = 'Consultas'
+      TabOrder = 1
+    end
+  end
+end

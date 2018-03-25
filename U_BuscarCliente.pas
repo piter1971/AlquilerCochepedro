@@ -1,0 +1,89 @@
+unit U_BuscarCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.Grids, Vcl.DBGrids;
+
+type
+  TForm6 = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    RGBuscarPor: TRadioGroup;
+    RBDni: TRadioButton;
+    RBNombre: TRadioButton;
+    BitBtnBuscar: TBitBtn;
+    CHBExacto: TCheckBox;
+    ETnomApell: TEdit;
+
+    procedure BitBtnBuscarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormCanResize(Sender: TObject; var NewWidth, NewHeight: Integer;
+      var Resize: Boolean);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+uses U_module, U_VerContactBuscado, U_BuscarPorNom;
+
+{$R *.dfm}
+
+
+
+procedure TForm6.BitBtnBuscarClick(Sender: TObject);
+begin
+if (CHBExacto.Checked) and (RBDni.Checked) then
+
+   begin
+Datamodule3.Q_BuscarDNI.Close ;
+    Datamodule3.Q_BuscarDNI.ParamByName('DNI').AsString:= ETnomApell.Text;
+  //datamodule3.Q_BuscarDNI.SQL.Text:='Select dni_con_letra, nom_apell,telefono,domicilio from CLIENTE where dni_con_letra='+ QuotedStr(ETnomApell.Text)  ;
+   Datamodule3.Q_BuscarDNI.open ;
+      form7.ShowModal;
+   end
+   else if (CHBExacto.Checked)and (RBNombre.Checked) then
+   begin
+
+   Datamodule3.Q_Buscarpornom.close;
+  Datamodule3.Q_Buscarpornom.ParamByName('Nom').AsString:= ETnomApell.Text;
+   Datamodule3.Q_Buscarpornom.open;
+      form8.ShowModal
+   end
+   else if (not  (CHBExacto.Checked)) and (RBDNI.Checked) then
+   begin
+   Datamodule3.Q_BuscarDNI.Close;
+  //  Datamodule3.Q_BuscarDNI.SQL.Text:='Select dni_con_letra, nom_apell,telefono,domicilio from CLIENTE where dni_con_letra='+'%'+QuotedStr(ETnomApell.Text+'%')  ;
+  Datamodule3.Q_BuscarDNI.ParamByName('DNI').AsString:= '%'+ETnomApell.Text+'%';
+   Datamodule3.Q_BuscarDNI.open;
+      form7.ShowModal
+   end
+   else if (not  (CHBExacto.Checked)) and (RBNombre.Checked) then
+    begin
+
+   Datamodule3.Q_Buscarpornom.close;
+  Datamodule3.Q_Buscarpornom.ParamByName('Nom').AsString:= '%'+ETnomApell.Text+'%';
+   Datamodule3.Q_Buscarpornom.open;
+      form8.ShowModal
+      end;
+    end   ;
+
+procedure TForm6.FormCanResize(Sender: TObject; var NewWidth,
+  NewHeight: Integer; var Resize: Boolean);
+begin
+Resize:=false;
+end;
+
+procedure TForm6.FormCreate(Sender: TObject);
+begin
+RBDni.Checked:=true;
+end;
+
+end.

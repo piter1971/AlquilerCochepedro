@@ -1,0 +1,60 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 305
+  ClientWidth = 157
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 157
+    Height = 305
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 144
+    ExplicitTop = 56
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object SpeedButton1: TSpeedButton
+      Left = 0
+      Top = 256
+      Width = 70
+      Height = 22
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 87
+      Top = 256
+      Width = 70
+      Height = 22
+    end
+    object DBLookupListBox1: TDBLookupListBox
+      Left = 0
+      Top = 0
+      Width = 153
+      Height = 173
+      KeyField = 'nombre_caract'
+      ListField = 'nombre_caract'
+      ListSource = DataModule3.DSCaract
+      TabOrder = 0
+    end
+    object Caracteristicas: TLabeledEdit
+      Left = 0
+      Top = 216
+      Width = 121
+      Height = 21
+      EditLabel.Width = 71
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Caracteristicas'
+      TabOrder = 1
+    end
+  end
+end

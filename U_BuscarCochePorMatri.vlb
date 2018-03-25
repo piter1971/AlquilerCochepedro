@@ -1,0 +1,13 @@
+﻿[]
+Coordinates=76,62,63,51
+Visible=True
+
+[BindSourceDB1]
+Coordinates=142,1,92,195
+
+[DataModule3.FDTable2]
+Visible=False
+
+[BindingsList1]
+Coordinates=272,1,82,33
+

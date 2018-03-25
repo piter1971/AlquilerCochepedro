@@ -1,0 +1,79 @@
+unit U_Coche;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.Bind.Controls, Vcl.Bind.Grid,
+  System.Rtti, System.Bindings.Outputs, Vcl.Bind.Editors, Data.Bind.EngExt,
+  Vcl.Bind.DBEngExt, Vcl.Buttons, Data.Bind.Components, Data.Bind.Grid,
+  Vcl.Grids, Data.Bind.DBScope, Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Mask,
+  Vcl.ExtCtrls, Vcl.Bind.Navigator, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TFormcoche = class(TForm)
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Label6: TLabel;
+    DBImage1: TDBImage;
+    Button1: TButton;
+    BindSourceDB1: TBindSourceDB;
+    StringGridBindSourceDB1: TStringGrid;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    BindingsList1: TBindingsList;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    DBNavigator1: TDBNavigator;
+    BindSourceDB2: TBindSourceDB;
+    ComboBox1: TComboBox;
+    procedure BitBtn1Click(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Formcoche: TFormcoche;
+
+implementation
+uses U_module;
+
+{$R *.dfm}
+
+procedure TFormcoche.BitBtn1Click(Sender: TObject);
+begin
+if (DBEdit1.Text='') and (DBEdit2.Text='') and  (DBEdit3.Text='')
+and (DBEdit4.Text='')  and (DBEdit5.Text='') then
+   ShowMessage('los campos no pueden estar vacios')
+
+  else
+
+end;
+
+
+
+
+
+
+
+
+
+
+
+
+
+end.

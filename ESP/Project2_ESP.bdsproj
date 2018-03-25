@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">W32ResourceDLL.Personality</Option>
+      <Option Name="ProjectType">ResourceDLL</Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{46F4A3EC-BF1C-4535-B4D7-D92C13D87061}</Option>
+    </Option>
+  </PersonalityInfo>
+  <W32ResourceDLL.Personality>
+    <Source>
+      <Source Name="MainSource">Project2.dpr</Source>
+    </Source>
+    <Options>
+      <Options Name="BaseLang">3082</Options>
+      <Options Name="TargetName">..\Win32\Debug\Project2.ESP</Options>
+      <Options Name="BRCC_IncludePath"></Options>
+      <Options Name="Company"></Options>
+      <Options Name="Configuration"></Options>
+      <Options Name="Copyright"></Options>
+      <Options Name="Description"></Options>
+      <Options Name="Trademark"></Options>
+      <Options Name="Product"></Options>
+      <Options Name="ProductVersion"></Options>
+      <Options Name="Title"></Options>
+      <Options Name="FileVersion"></Options>
+      <Options Name="Evidence"></Options>
+      <Options Name="KeyFile"></Options>
+      <Options Name="KeyName"></Options>
+    </Options>
+    <FileList>
+      <File FileName="U_Accesorios.dfm" ContainerId="W32Form" ModuleName="U_Accesorios.dfm"/>
+      <File FileName="U_Caract.dfm" ContainerId="W32Form" ModuleName="U_Caract.dfm"/>
+      <File FileName="U_module.dfm" ContainerId="W32Form" ModuleName="U_module.dfm"/>
+      <File FileName="U_principal.dfm" ContainerId="W32Form" ModuleName="U_principal.dfm"/>
+      <File FileName="Win32\Debug\Project2_DRC.rc" ContainerId="W32RC" ModuleName="Project2_DRC.rc"/>
+    </FileList>
+  </W32ResourceDLL.Personality>
+</BorlandProject>

@@ -1,0 +1,94 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Acerca De '
+  ClientHeight = 238
+  ClientWidth = 388
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 388
+    Height = 238
+    Align = alClient
+    Color = clRed
+    ParentBackground = False
+    TabOrder = 0
+    OnCanResize = Panel1CanResize
+    ExplicitWidth = 359
+    object Label1: TLabel
+      Left = 16
+      Top = 24
+      Width = 361
+      Height = 19
+      Caption = 'Proyecto hecho por Pedro Rodriguez Lozano'
+      Color = clHotLight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Panel2: TPanel
+      Left = 32
+      Top = 49
+      Width = 329
+      Height = 160
+      TabOrder = 0
+      object Label2: TLabel
+        Left = 40
+        Top = 24
+        Width = 163
+        Height = 13
+        Caption = 'agradecimiento a los profesores  :'
+      end
+      object Label3: TLabel
+        Left = 8
+        Top = 56
+        Width = 219
+        Height = 13
+        Caption = 'Jose Antonio   desarrollo Interfaz y moviles    '
+      end
+      object Label4: TLabel
+        Left = 8
+        Top = 75
+        Width = 321
+        Height = 13
+        Caption = 
+          'Isreal               Base de datos, Implatacion  web y Prog.de S' +
+          'ervicio '
+      end
+      object Label5: TLabel
+        Left = 8
+        Top = 94
+        Width = 115
+        Height = 13
+        Caption = 'Jorge              Empresas'
+      end
+      object Label6: TLabel
+        Left = 8
+        Top = 113
+        Width = 97
+        Height = 13
+        Caption = 'Patricia           Ingles'
+      end
+      object Label7: TLabel
+        Left = 128
+        Top = 136
+        Width = 183
+        Height = 13
+        Caption = 'Fecha 01/03/2017      Malaga   Optima'
+      end
+    end
+  end
+end

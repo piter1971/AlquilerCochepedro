@@ -1,0 +1,35 @@
+unit U_CaractCocheCalend;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.DBCtrls, Vcl.ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    DBLookupListBox1: TDBLookupListBox;
+    procedure FormCanResize(Sender: TObject; var NewWidth, NewHeight: Integer;
+      var Resize: Boolean);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+uses U_module;
+
+{$R *.dfm}
+
+procedure TForm5.FormCanResize(Sender: TObject; var NewWidth,
+  NewHeight: Integer; var Resize: Boolean);
+begin
+Resize:=false;
+end;
+
+end.
