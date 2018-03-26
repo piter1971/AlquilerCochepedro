@@ -5,6 +5,6 @@ Tiene entre muchas cosas la capacidad de :
 3) Se puede hacer un presupuesto de : Coche alquilado por dias + complementos y imprimir
 4) Se puede buscar un coche registrado en la BD por: marca , modelo , puerta, potencia, precio/dia.
 5) Se puede buscar cliente por: Dni.
-6) Se puede buscar coche alquilado vinculado con el cliente : por matricula y fecha de alquiler.
+6) Se puede buscar coche alquilado vinculado con el cliente : por matricula o fecha de alquiler.
 7) Imprimir lista de coche no alquilados, lista de coches alquilados con el cliente, todos los clientes.
 
